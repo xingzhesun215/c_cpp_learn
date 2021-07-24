@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/day1/打印练习.cpp" "/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/helloworld.dir/day1/打印练习.cpp.o"
+  "/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/day1/是否闰年.cpp" "/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/helloworld.dir/day1/是否闰年.cpp.o"
   "/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/main.cpp" "/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/helloworld.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

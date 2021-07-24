@@ -14,7 +14,7 @@ union myun{
     int k;
 }u;
 
-int main() {
+int main4() {
     cout << "hello 联合体" << endl;
     u.s.x=4;
     u.s.y=5;
