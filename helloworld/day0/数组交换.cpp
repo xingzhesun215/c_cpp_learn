@@ -19,7 +19,7 @@ void Reverse(int *p, int size) {
     }
 }
 
-int main() {
+int main2() {
 
     int a[3][4] = {{1,2,3,4},
                    {5,6,7,8},
