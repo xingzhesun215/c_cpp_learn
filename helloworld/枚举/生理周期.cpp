@@ -17,7 +17,7 @@ using namespace std;
  */
 #define N 21252
 
-int main() {
+int main2() {
     int p, e, i, d, caseNo = 0;
     while (cin >> p >> e >> i >> d && p != -1) {
         ++caseNo;

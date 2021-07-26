@@ -142,60 +142,6 @@ helloworld/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/build
 .PHONY : helloworld/fast
 
-day1/打印练习.o: day1/打印练习.cpp.o
-
-.PHONY : day1/打印练习.o
-
-# target to build an object file
-day1/打印练习.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/day1/打印练习.cpp.o
-.PHONY : day1/打印练习.cpp.o
-
-day1/打印练习.i: day1/打印练习.cpp.i
-
-.PHONY : day1/打印练习.i
-
-# target to preprocess a source file
-day1/打印练习.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/day1/打印练习.cpp.i
-.PHONY : day1/打印练习.cpp.i
-
-day1/打印练习.s: day1/打印练习.cpp.s
-
-.PHONY : day1/打印练习.s
-
-# target to generate assembly for a file
-day1/打印练习.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/day1/打印练习.cpp.s
-.PHONY : day1/打印练习.cpp.s
-
-day1/是否闰年.o: day1/是否闰年.cpp.o
-
-.PHONY : day1/是否闰年.o
-
-# target to build an object file
-day1/是否闰年.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/day1/是否闰年.cpp.o
-.PHONY : day1/是否闰年.cpp.o
-
-day1/是否闰年.i: day1/是否闰年.cpp.i
-
-.PHONY : day1/是否闰年.i
-
-# target to preprocess a source file
-day1/是否闰年.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/day1/是否闰年.cpp.i
-.PHONY : day1/是否闰年.cpp.i
-
-day1/是否闰年.s: day1/是否闰年.cpp.s
-
-.PHONY : day1/是否闰年.s
-
-# target to generate assembly for a file
-day1/是否闰年.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/day1/是否闰年.cpp.s
-.PHONY : day1/是否闰年.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -232,12 +178,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... helloworld"
-	@echo "... day1/打印练习.o"
-	@echo "... day1/打印练习.i"
-	@echo "... day1/打印练习.s"
-	@echo "... day1/是否闰年.o"
-	@echo "... day1/是否闰年.i"
-	@echo "... day1/是否闰年.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

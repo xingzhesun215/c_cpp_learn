@@ -78,12 +78,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/day1/打印练习.cpp">
-			<Option target="helloworld"/>
-		</Unit>
-		<Unit filename="/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/day1/是否闰年.cpp">
-			<Option target="helloworld"/>
-		</Unit>
 		<Unit filename="/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/main.cpp">
 			<Option target="helloworld"/>
 		</Unit>
