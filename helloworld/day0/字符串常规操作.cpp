@@ -13,7 +13,7 @@ using namespace std;
  * 字符串常用操作
  * @return
  */
-int main() {
+int main3() {
     char s1[100] = "12345";
     char s2[100] = "abcdefg";
     char s3[100] = "ABCDEFG";

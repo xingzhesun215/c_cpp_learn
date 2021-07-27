@@ -1,264 +1,587 @@
-The system is: Darwin - 20.3.0 - arm64
+The system is: Windows - 10.0.19042 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Compiler: E:/2020soft/Dev-Cpp/MinGW64/bin/gcc.exe 
 Build flags: 
-Id flags: -c 
+Id flags:  
 
 The output was:
 0
 
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is AppleClang, found in "/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/3.19.2/CompilerIdC/CMakeCCompilerId.o"
+The C compiler identification is GNU, found in "F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Compiler: E:/2020soft/Dev-Cpp/MinGW64/bin/g++.exe 
 Build flags: 
-Id flags: -c 
+Id flags:  
 
 The output was:
 0
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is AppleClang, found in "/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/3.19.2/CompilerIdCXX/CMakeCXXCompilerId.o"
+The CXX compiler identification is GNU, found in "F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe cmTC_3a4b4/fast && E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f CMakeFiles\cmTC_3a4b4.dir\build.make CMakeFiles/cmTC_3a4b4.dir/build
+mingw32-make.exe[1]: Entering directory 'F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3a4b4.dir/testCCompiler.c.obj
+E:\2020soft\Dev-Cpp\MinGW64\bin\gcc.exe    -o CMakeFiles\cmTC_3a4b4.dir\testCCompiler.c.obj   -c F:\Sun_Studio\c_cpp_learn\helloworld\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_3a4b4.exe
+"E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3a4b4.dir\link.txt --verbose=1
+"E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_3a4b4.dir/objects.a
+E:\2020soft\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\cmTC_3a4b4.dir/objects.a @CMakeFiles\cmTC_3a4b4.dir\objects1.rsp
+E:\2020soft\Dev-Cpp\MinGW64\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_3a4b4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3a4b4.exe -Wl,--out-implib,libcmTC_3a4b4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3a4b4.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_83837/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_83837.dir/build.make CMakeFiles/cmTC_83837.dir/build
-Building C object CMakeFiles/cmTC_83837.dir/CMakeCCompilerABI.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2   -v -Wl,-v -o CMakeFiles/cmTC_83837.dir/CMakeCCompilerABI.c.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.19/Modules/CMakeCCompilerABI.c
-Apple clang version 12.0.5 (clang-1205.0.22.9)
-Target: aarch64-apple-darwin20.3.0
-Thread model: posix
-InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx11.2.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=11.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-a12 -target-feature +v8.3a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +fullfp16 -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 650.9 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdebug-compilation-dir /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_83837.dir/CMakeCCompilerABI.c.o -x c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.19/Modules/CMakeCCompilerABI.c
-clang -cc1 version 12.0.5 (clang-1205.0.22.9) default target arm64-apple-darwin20.3.0
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/local/include"
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/Library/Frameworks"
-#include "..." search starts here:
-#include <...> search starts here:
- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include
- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks (framework directory)
-End of search list.
-Linking C executable cmTC_83837
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83837.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_83837.dir/CMakeCCompilerABI.c.o -o cmTC_83837 
-Apple clang version 12.0.5 (clang-1205.0.22.9)
-Target: aarch64-apple-darwin20.3.0
-Thread model: posix
-InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.2.0 11.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -o cmTC_83837 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_83837.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a
-@(#)PROGRAM:ld  PROJECT:ld64-650.9
-BUILD 00:19:34 Mar 17 2021
-configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-Library search paths:
-	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib
-Framework search paths:
-	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/
+Run Build Command(s):E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe cmTC_ab7f6/fast && E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f CMakeFiles\cmTC_ab7f6.dir\build.make CMakeFiles/cmTC_ab7f6.dir/build
+mingw32-make.exe[1]: Entering directory 'F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab7f6.dir/CMakeCCompilerABI.c.obj
+E:\2020soft\Dev-Cpp\MinGW64\bin\gcc.exe   -v -o CMakeFiles\cmTC_ab7f6.dir\CMakeCCompilerABI.c.obj   -c "E:\2020soft\CLion 2019.3.5\bin\cmake\win\share\cmake-3.15\Modules\CMakeCCompilerABI.c"
+Using built-in specs.
+COLLECT_GCC=E:\2020soft\Dev-Cpp\MinGW64\bin\gcc.exe
+Target: x86_64-w64-mingw32
+Configured with: ../../../src/gcc-4.9.2/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=http://tdm-gcc.tdragon.net/bugs
+Thread model: posix
+gcc version 4.9.2 (tdm64-1) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ab7f6.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/cc1.exe -quiet -v -iprefix E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/ -D_REENTRANT E:\2020soft\CLion 2019.3.5\bin\cmake\win\share\cmake-3.15\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\cmTC_ab7f6.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\ADMINI~1\AppData\Local\Temp\cc3SMzhB.s
+GNU C (tdm64-1) version 4.9.2 (x86_64-w64-mingw32)
+	compiled by GNU C version 4.9.2, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.2
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include"
+ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"
+ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include
+End of search list.
+GNU C (tdm64-1) version 4.9.2 (x86_64-w64-mingw32)
+	compiled by GNU C version 4.9.2, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.2
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: d23ebdb4e081c97b257cdcdb7f0d8f7e
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ab7f6.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_ab7f6.dir\CMakeCCompilerABI.c.obj C:\Users\ADMINI~1\AppData\Local\Temp\cc3SMzhB.s
+GNU assembler version 2.24.51 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.24.51.20140703
+COMPILER_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/;E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ab7f6.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_ab7f6.exe
+"E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ab7f6.dir\link.txt --verbose=1
+"E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ab7f6.dir/objects.a
+E:\2020soft\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\cmTC_ab7f6.dir/objects.a @CMakeFiles\cmTC_ab7f6.dir\objects1.rsp
+E:\2020soft\Dev-Cpp\MinGW64\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_ab7f6.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ab7f6.exe -Wl,--out-implib,libcmTC_ab7f6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=E:\2020soft\Dev-Cpp\MinGW64\bin\gcc.exe
+COLLECT_LTO_WRAPPER=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe
+Target: x86_64-w64-mingw32
+Configured with: ../../../src/gcc-4.9.2/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=http://tdm-gcc.tdragon.net/bugs
+Thread model: posix
+gcc version 4.9.2 (tdm64-1) 
+COMPILER_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/;E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ab7f6.exe' '-mtune=generic' '-march=x86-64'
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/collect2.exe -plugin E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\ADMINI~1\AppData\Local\Temp\cc55WSgY.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_ab7f6.exe E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2 -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../.. --whole-archive CMakeFiles\cmTC_ab7f6.dir/objects.a --no-whole-archive --out-implib libcmTC_ab7f6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o
+mingw32-make.exe[1]: Leaving directory 'F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 
 Parsed C implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include]
-    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
-    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+    add: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include]
+    add: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include]
+    add: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed]
+    add: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include]
   end of search list found
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include]
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-  implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  collapse include dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include]
+  collapse include dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include] ==> [E:/2020soft/Dev-Cpp/MinGW64/include]
+  collapse include dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed]
+  collapse include dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include] ==> [E:/2020soft/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include]
+  implicit include dirs: [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include;E:/2020soft/Dev-Cpp/MinGW64/include;E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed;E:/2020soft/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include]
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_83837/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_83837.dir/build.make CMakeFiles/cmTC_83837.dir/build]
-  ignore line: [Building C object CMakeFiles/cmTC_83837.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2   -v -Wl -v -o CMakeFiles/cmTC_83837.dir/CMakeCCompilerABI.c.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.19/Modules/CMakeCCompilerABI.c]
-  ignore line: [Apple clang version 12.0.5 (clang-1205.0.22.9)]
-  ignore line: [Target: aarch64-apple-darwin20.3.0]
+  ignore line: [Run Build Command(s):E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe cmTC_ab7f6/fast && E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f CMakeFiles\cmTC_ab7f6.dir\build.make CMakeFiles/cmTC_ab7f6.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_ab7f6.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [E:\2020soft\Dev-Cpp\MinGW64\bin\gcc.exe   -v -o CMakeFiles\cmTC_ab7f6.dir\CMakeCCompilerABI.c.obj   -c "E:\2020soft\CLion 2019.3.5\bin\cmake\win\share\cmake-3.15\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=E:\2020soft\Dev-Cpp\MinGW64\bin\gcc.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx11.2.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=11.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-a12 -target-feature +v8.3a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +fullfp16 -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 650.9 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdebug-compilation-dir /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_83837.dir/CMakeCCompilerABI.c.o -x c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.19/Modules/CMakeCCompilerABI.c]
-  ignore line: [clang -cc1 version 12.0.5 (clang-1205.0.22.9) default target arm64-apple-darwin20.3.0]
-  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/local/include"]
-  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/Library/Frameworks"]
+  ignore line: [gcc version 4.9.2 (tdm64-1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ab7f6.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/cc1.exe -quiet -v -iprefix E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/ -D_REENTRANT E:\2020soft\CLion 2019.3.5\bin\cmake\win\share\cmake-3.15\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\cmTC_ab7f6.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\ADMINI~1\AppData\Local\Temp\cc3SMzhB.s]
+  ignore line: [GNU C (tdm64-1) version 4.9.2 (x86_64-w64-mingw32)]
+  ignore line: [	compiled by GNU C version 4.9.2, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.2]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include"]
+  ignore line: [ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include"]
+  ignore line: [ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"]
+  ignore line: [ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include]
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include]
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed]
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include]
   ignore line: [End of search list.]
-  ignore line: [Linking C executable cmTC_83837]
-  ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83837.dir/link.txt --verbose=1]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_83837.dir/CMakeCCompilerABI.c.o -o cmTC_83837 ]
-  ignore line: [Apple clang version 12.0.5 (clang-1205.0.22.9)]
-  ignore line: [Target: aarch64-apple-darwin20.3.0]
+  ignore line: [GNU C (tdm64-1) version 4.9.2 (x86_64-w64-mingw32)]
+  ignore line: [	compiled by GNU C version 4.9.2, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.2]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: d23ebdb4e081c97b257cdcdb7f0d8f7e]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ab7f6.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_ab7f6.dir\CMakeCCompilerABI.c.obj C:\Users\ADMINI~1\AppData\Local\Temp\cc3SMzhB.s]
+  ignore line: [GNU assembler version 2.24.51 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.24.51.20140703]
+  ignore line: [COMPILER_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ab7f6.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_ab7f6.exe]
+  ignore line: ["E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ab7f6.dir\link.txt --verbose=1]
+  ignore line: ["E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ab7f6.dir/objects.a]
+  ignore line: [E:\2020soft\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\cmTC_ab7f6.dir/objects.a @CMakeFiles\cmTC_ab7f6.dir\objects1.rsp]
+  ignore line: [E:\2020soft\Dev-Cpp\MinGW64\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_ab7f6.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ab7f6.exe -Wl,--out-implib,libcmTC_ab7f6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=E:\2020soft\Dev-Cpp\MinGW64\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.2.0 11.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -o cmTC_83837 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_83837.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a]
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
-    arg [-demangle] ==> ignore
-    arg [-lto_library] ==> ignore, skip following value
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [arm64] ==> ignore
-    arg [-platform_version] ==> ignore
-    arg [macos] ==> ignore
-    arg [11.2.0] ==> ignore
-    arg [11.3] ==> ignore
-    arg [-syslibroot] ==> ignore
-    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk] ==> ignore
+  ignore line: [gcc version 4.9.2 (tdm64-1) ]
+  ignore line: [COMPILER_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ab7f6.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/collect2.exe -plugin E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\ADMINI~1\AppData\Local\Temp\cc55WSgY.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_ab7f6.exe E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2 -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../.. --whole-archive CMakeFiles\cmTC_ab7f6.dir/objects.a --no-whole-archive --out-implib libcmTC_ab7f6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o]
+    arg [E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/collect2.exe] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\ADMINI~1\AppData\Local\Temp\cc55WSgY.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-m] ==> ignore
+    arg [i386pep] ==> ignore
+    arg [--exclude-libs=libpthread.a] ==> ignore
+    arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_83837] ==> ignore
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_83837.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-lSystem] ==> lib [System]
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a]
-  Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
-  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/]
-  remove lib [System]
-  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a]
-  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
-  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
-  implicit libs: []
-  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
-  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+    arg [cmTC_ab7f6.exe] ==> ignore
+    arg [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
+    arg [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o] ==> ignore
+    arg [-LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2] ==> dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2]
+    arg [-LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc] ==> dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc]
+    arg [-LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib]
+    arg [-LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib] ==> dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib]
+    arg [-LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib] ==> dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib]
+    arg [-LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../..] ==> dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../..]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTC_ab7f6.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTC_ab7f6.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o] ==> ignore
+  remove lib [msvcrt]
+  remove lib [msvcrt]
+  collapse library dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2]
+  collapse library dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc]
+  collapse library dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib] ==> [E:/2020soft/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib]
+  collapse library dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib]
+  collapse library dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib] ==> [E:/2020soft/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib]
+  collapse library dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../..] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib]
+  implicit libs: [mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex]
+  implicit dirs: [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2;E:/2020soft/Dev-Cpp/MinGW64/lib/gcc;E:/2020soft/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib;E:/2020soft/Dev-Cpp/MinGW64/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe cmTC_86dc7/fast && E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f CMakeFiles\cmTC_86dc7.dir\build.make CMakeFiles/cmTC_86dc7.dir/build
+mingw32-make.exe[1]: Entering directory 'F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_86dc7.dir/testCXXCompiler.cxx.obj
+E:\2020soft\Dev-Cpp\MinGW64\bin\g++.exe     -o CMakeFiles\cmTC_86dc7.dir\testCXXCompiler.cxx.obj -c F:\Sun_Studio\c_cpp_learn\helloworld\cmake-build-debug\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTC_86dc7.exe
+"E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_86dc7.dir\link.txt --verbose=1
+"E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_86dc7.dir/objects.a
+E:\2020soft\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\cmTC_86dc7.dir/objects.a @CMakeFiles\cmTC_86dc7.dir\objects1.rsp
+E:\2020soft\Dev-Cpp\MinGW64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_86dc7.dir/objects.a -Wl,--no-whole-archive  -o cmTC_86dc7.exe -Wl,--out-implib,libcmTC_86dc7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_86dc7.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp'
+
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_94356/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_94356.dir/build.make CMakeFiles/cmTC_94356.dir/build
-Building CXX object CMakeFiles/cmTC_94356.dir/CMakeCXXCompilerABI.cpp.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2   -v -Wl,-v -o CMakeFiles/cmTC_94356.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp
-Apple clang version 12.0.5 (clang-1205.0.22.9)
-Target: aarch64-apple-darwin20.3.0
-Thread model: posix
-InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx11.2.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=11.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-a12 -target-feature +v8.3a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +fullfp16 -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 650.9 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -fdebug-compilation-dir /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_94356.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp
-clang -cc1 version 12.0.5 (clang-1205.0.22.9) default target arm64-apple-darwin20.3.0
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/local/include"
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/Library/Frameworks"
-#include "..." search starts here:
-#include <...> search starts here:
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1
- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include
- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks (framework directory)
-End of search list.
-Linking CXX executable cmTC_94356
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94356.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_94356.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_94356 
-Apple clang version 12.0.5 (clang-1205.0.22.9)
-Target: aarch64-apple-darwin20.3.0
-Thread model: posix
-InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.2.0 11.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -o cmTC_94356 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_94356.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a
-@(#)PROGRAM:ld  PROJECT:ld64-650.9
-BUILD 00:19:34 Mar 17 2021
-configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-Library search paths:
-	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib
-Framework search paths:
-	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/
+Run Build Command(s):E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe cmTC_f7985/fast && E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f7985.dir\build.make CMakeFiles/cmTC_f7985.dir/build
+mingw32-make.exe[1]: Entering directory 'F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f7985.dir/CMakeCXXCompilerABI.cpp.obj
+E:\2020soft\Dev-Cpp\MinGW64\bin\g++.exe    -v -o CMakeFiles\cmTC_f7985.dir\CMakeCXXCompilerABI.cpp.obj -c "E:\2020soft\CLion 2019.3.5\bin\cmake\win\share\cmake-3.15\Modules\CMakeCXXCompilerABI.cpp"
+Using built-in specs.
+COLLECT_GCC=E:\2020soft\Dev-Cpp\MinGW64\bin\g++.exe
+Target: x86_64-w64-mingw32
+Configured with: ../../../src/gcc-4.9.2/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=http://tdm-gcc.tdragon.net/bugs
+Thread model: posix
+gcc version 4.9.2 (tdm64-1) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_f7985.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/cc1plus.exe -quiet -v -iprefix E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/ -D_REENTRANT E:\2020soft\CLion 2019.3.5\bin\cmake\win\share\cmake-3.15\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\cmTC_f7985.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\ADMINI~1\AppData\Local\Temp\cc5qiXKp.s
+GNU C++ (tdm64-1) version 4.9.2 (x86_64-w64-mingw32)
+	compiled by GNU C version 4.9.2, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.2
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32"
+ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward"
+ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include"
+ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"
+ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include
+End of search list.
+GNU C++ (tdm64-1) version 4.9.2 (x86_64-w64-mingw32)
+	compiled by GNU C version 4.9.2, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.2
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 199b949b87568ce5f1a18d5adc9fa901
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_f7985.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_f7985.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\ADMINI~1\AppData\Local\Temp\cc5qiXKp.s
+GNU assembler version 2.24.51 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.24.51.20140703
+COMPILER_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/;E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_f7985.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_f7985.exe
+"E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f7985.dir\link.txt --verbose=1
+"E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_f7985.dir/objects.a
+E:\2020soft\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\cmTC_f7985.dir/objects.a @CMakeFiles\cmTC_f7985.dir\objects1.rsp
+E:\2020soft\Dev-Cpp\MinGW64\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_f7985.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f7985.exe -Wl,--out-implib,libcmTC_f7985.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=E:\2020soft\Dev-Cpp\MinGW64\bin\g++.exe
+COLLECT_LTO_WRAPPER=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe
+Target: x86_64-w64-mingw32
+Configured with: ../../../src/gcc-4.9.2/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=http://tdm-gcc.tdragon.net/bugs
+Thread model: posix
+gcc version 4.9.2 (tdm64-1) 
+COMPILER_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/;E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/;E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f7985.exe' '-mtune=generic' '-march=x86-64'
+ E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/collect2.exe -plugin E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\ADMINI~1\AppData\Local\Temp\ccF9YTRK.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_f7985.exe E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2 -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../.. --whole-archive CMakeFiles\cmTC_f7985.dir/objects.a --no-whole-archive --out-implib libcmTC_f7985.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o
+mingw32-make.exe[1]: Leaving directory 'F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 
 Parsed CXX implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1]
-    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include]
-    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
-    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+    add: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++]
+    add: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32]
+    add: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward]
+    add: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include]
+    add: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include]
+    add: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed]
+    add: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include]
   end of search list found
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1]
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include]
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-  implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  collapse include dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++]
+  collapse include dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32]
+  collapse include dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward]
+  collapse include dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include]
+  collapse include dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include] ==> [E:/2020soft/Dev-Cpp/MinGW64/include]
+  collapse include dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed]
+  collapse include dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include] ==> [E:/2020soft/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include]
+  implicit include dirs: [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++;E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32;E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward;E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include;E:/2020soft/Dev-Cpp/MinGW64/include;E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed;E:/2020soft/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include]
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_94356/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_94356.dir/build.make CMakeFiles/cmTC_94356.dir/build]
-  ignore line: [Building CXX object CMakeFiles/cmTC_94356.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2   -v -Wl -v -o CMakeFiles/cmTC_94356.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Apple clang version 12.0.5 (clang-1205.0.22.9)]
-  ignore line: [Target: aarch64-apple-darwin20.3.0]
+  ignore line: [Run Build Command(s):E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe cmTC_f7985/fast && E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f7985.dir\build.make CMakeFiles/cmTC_f7985.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_f7985.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [E:\2020soft\Dev-Cpp\MinGW64\bin\g++.exe    -v -o CMakeFiles\cmTC_f7985.dir\CMakeCXXCompilerABI.cpp.obj -c "E:\2020soft\CLion 2019.3.5\bin\cmake\win\share\cmake-3.15\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=E:\2020soft\Dev-Cpp\MinGW64\bin\g++.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx11.2.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=11.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-a12 -target-feature +v8.3a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +fullfp16 -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 650.9 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -fdebug-compilation-dir /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_94356.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [clang -cc1 version 12.0.5 (clang-1205.0.22.9) default target arm64-apple-darwin20.3.0]
-  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/local/include"]
-  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/Library/Frameworks"]
+  ignore line: [gcc version 4.9.2 (tdm64-1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_f7985.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/cc1plus.exe -quiet -v -iprefix E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/ -D_REENTRANT E:\2020soft\CLion 2019.3.5\bin\cmake\win\share\cmake-3.15\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles\cmTC_f7985.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\ADMINI~1\AppData\Local\Temp\cc5qiXKp.s]
+  ignore line: [GNU C++ (tdm64-1) version 4.9.2 (x86_64-w64-mingw32)]
+  ignore line: [	compiled by GNU C version 4.9.2, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.2]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"]
+  ignore line: [ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32"]
+  ignore line: [ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward"]
+  ignore line: [ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include"]
+  ignore line: [ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include"]
+  ignore line: [ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"]
+  ignore line: [ignoring duplicate directory "E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++]
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32]
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward]
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include]
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include]
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed]
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include]
   ignore line: [End of search list.]
-  ignore line: [Linking CXX executable cmTC_94356]
-  ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94356.dir/link.txt --verbose=1]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_94356.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_94356 ]
-  ignore line: [Apple clang version 12.0.5 (clang-1205.0.22.9)]
-  ignore line: [Target: aarch64-apple-darwin20.3.0]
+  ignore line: [GNU C++ (tdm64-1) version 4.9.2 (x86_64-w64-mingw32)]
+  ignore line: [	compiled by GNU C version 4.9.2, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.2]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 199b949b87568ce5f1a18d5adc9fa901]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_f7985.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_f7985.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\ADMINI~1\AppData\Local\Temp\cc5qiXKp.s]
+  ignore line: [GNU assembler version 2.24.51 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.24.51.20140703]
+  ignore line: [COMPILER_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_f7985.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_f7985.exe]
+  ignore line: ["E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f7985.dir\link.txt --verbose=1]
+  ignore line: ["E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_f7985.dir/objects.a]
+  ignore line: [E:\2020soft\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\cmTC_f7985.dir/objects.a @CMakeFiles\cmTC_f7985.dir\objects1.rsp]
+  ignore line: [E:\2020soft\Dev-Cpp\MinGW64\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_f7985.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f7985.exe -Wl,--out-implib,libcmTC_f7985.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=E:\2020soft\Dev-Cpp\MinGW64\bin\g++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --disable-build-with-cxx --disable-build-poststage1-with-cxx --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-1 --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.2.0 11.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -o cmTC_94356 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_94356.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a]
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
-    arg [-demangle] ==> ignore
-    arg [-lto_library] ==> ignore, skip following value
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [arm64] ==> ignore
-    arg [-platform_version] ==> ignore
-    arg [macos] ==> ignore
-    arg [11.2.0] ==> ignore
-    arg [11.3] ==> ignore
-    arg [-syslibroot] ==> ignore
-    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk] ==> ignore
+  ignore line: [gcc version 4.9.2 (tdm64-1) ]
+  ignore line: [COMPILER_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f7985.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/collect2.exe -plugin E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\ADMINI~1\AppData\Local\Temp\ccF9YTRK.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTC_f7985.exe E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2 -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib -LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../.. --whole-archive CMakeFiles\cmTC_f7985.dir/objects.a --no-whole-archive --out-implib libcmTC_f7985.dll.a --major-image-version 0 --minor-image-version 0 -Bstatic -lstdc++ -Bdynamic -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o]
+    arg [E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/collect2.exe] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=E:/2020soft/Dev-Cpp/MinGW64/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.2/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\ADMINI~1\AppData\Local\Temp\ccF9YTRK.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-m] ==> ignore
+    arg [i386pep] ==> ignore
+    arg [--exclude-libs=libpthread.a] ==> ignore
+    arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_94356] ==> ignore
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_94356.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-    arg [-lc++] ==> lib [c++]
-    arg [-lSystem] ==> lib [System]
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a]
-  Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
-  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/]
-  remove lib [System]
-  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a]
-  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
-  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
-  implicit libs: [c++]
-  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
-  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+    arg [cmTC_f7985.exe] ==> ignore
+    arg [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
+    arg [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o] ==> ignore
+    arg [-LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2] ==> dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2]
+    arg [-LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc] ==> dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc]
+    arg [-LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib]
+    arg [-LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib] ==> dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib]
+    arg [-LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib] ==> dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib]
+    arg [-LE:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../..] ==> dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../..]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTC_f7985.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTC_f7985.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-Bstatic] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-Bdynamic] ==> ignore
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o] ==> ignore
+  remove lib [msvcrt]
+  remove lib [msvcrt]
+  collapse library dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2]
+  collapse library dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc]
+  collapse library dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib/../lib] ==> [E:/2020soft/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib]
+  collapse library dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../lib] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib]
+  collapse library dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/lib] ==> [E:/2020soft/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib]
+  collapse library dir [E:/2020soft/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../..] ==> [E:/2020soft/Dev-Cpp/MinGW64/lib]
+  implicit libs: [stdc++;mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex]
+  implicit dirs: [E:/2020soft/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2;E:/2020soft/Dev-Cpp/MinGW64/lib/gcc;E:/2020soft/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib;E:/2020soft/Dev-Cpp/MinGW64/lib]
+  implicit fwks: []
 
 
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe cmTC_3beb4/fast && E:/2020soft/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f CMakeFiles\cmTC_3beb4.dir\build.make CMakeFiles/cmTC_3beb4.dir/build
+mingw32-make.exe[1]: Entering directory 'F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3beb4.dir/feature_tests.cxx.obj
+E:\2020soft\Dev-Cpp\MinGW64\bin\g++.exe    -std=c++14 -o CMakeFiles\cmTC_3beb4.dir\feature_tests.cxx.obj -c F:\Sun_Studio\c_cpp_learn\helloworld\cmake-build-debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_3beb4.exe
+"E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3beb4.dir\link.txt --verbose=1
+"E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_3beb4.dir/objects.a
+E:\2020soft\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\cmTC_3beb4.dir/objects.a @CMakeFiles\cmTC_3beb4.dir\objects1.rsp
+E:\2020soft\Dev-Cpp\MinGW64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_3beb4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3beb4.exe -Wl,--out-implib,libcmTC_3beb4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3beb4.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_variable_templates

@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/main.cpp
+F:/Sun_Studio/c_cpp_learn/helloworld/main.cpp
 iostream
 -
+cstring
+-
+ctype.h
+F:/Sun_Studio/c_cpp_learn/helloworld/ctype.h
 

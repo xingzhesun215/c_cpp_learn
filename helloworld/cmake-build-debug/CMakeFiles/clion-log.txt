@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld
+"E:\2020soft\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" F:\Sun_Studio\c_cpp_learn\helloworld
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/cmake-build-debug
+-- Build files have been written to: F:/Sun_Studio/c_cpp_learn/helloworld/cmake-build-debug
