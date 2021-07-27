@@ -19,7 +19,7 @@ void printArr(int *data, int length) {
  * 整个数组分有序及无序的2边，每次取无序的第一个插入到有序的部分中，最终全部有序
  * @return
  */
-int main() {
+int main7() {
     int data[] = {2, 1, 10, 3, 5, 4, 6, 8, 7, 9};
     int size = sizeof(data) / sizeof(int);
     cout << "size=" << size << endl;
