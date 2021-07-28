@@ -26,7 +26,7 @@ void printMultiSet(multiset<int> st) {
  * multiset的基本用法，自带排序
  * @return
  */
-int main() {
+int main2() {
     int data[] = {2, 1, 10, 3, 5, 4, 6, 8, 7, 9};
     int size = sizeof(data) / sizeof(int);
     cout << "size=" << size << endl;
@@ -52,8 +52,8 @@ int main() {
         cout << "set中有5" << endl;
     }
 
-  cout<<"delete 11 in multiset result="<<  st.erase(11)<<endl;
-  cout<<"delete 10 in multiset result="<<  st.erase(10)<<endl;
+    cout<<"delete 11 in multiset result="<<  st.erase(11)<<endl;
+    cout<<"delete 10 in multiset result="<<  st.erase(10)<<endl;
     printMultiSet(st);
 
     return 0;
