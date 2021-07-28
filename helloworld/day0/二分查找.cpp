@@ -14,10 +14,10 @@ void printArr(int *data, int length) {
 }
 
 /**
- * stl排序使用
+ * stl 二分查找 binaay_search（返回1/0） lower_bound(返回位置索引指针) upper_bound(返回大于查找值的索引指针)
  * @return
  */
-int main() {
+int main1() {
     int data[] = {2, 1, 10, 3, 5, 4, 6, 8, 7, 9};
     int size = sizeof(data) / sizeof(int);
     cout << "size=" << size << endl;
