@@ -1,0 +1,3 @@
+F:/Sun_Studio/c_cpp_learn/hello_w10/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/Sun_Studio/c_cpp_learn/hello_w10/cmake-build-debug/CMakeFiles/hello_w10.dir
+F:/Sun_Studio/c_cpp_learn/hello_w10/cmake-build-debug/CMakeFiles/rebuild_cache.dir
