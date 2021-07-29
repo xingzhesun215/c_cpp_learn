@@ -10,7 +10,7 @@
  * 动态分配内存
  * @return
  */
-int main() {
+int main2() {
 
     int *p1 = new int;
     *p1 = 5;
