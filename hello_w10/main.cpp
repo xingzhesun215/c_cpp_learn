@@ -1,6 +1,15 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    const int a = 10;
+    int *p = (int*)&a;
+    printf("a===>%d\n", a);
+    *p = 11;
+    printf("a===>%d\n", a);
+    printf("*p===>%d\n", *p);
+
+    printf("Hello......\n");
     return 0;
 }
