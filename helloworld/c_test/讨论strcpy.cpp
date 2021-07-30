@@ -10,7 +10,7 @@
  *strcpy 复制函数的特别考虑
  * @return
  */
-int main() {
+int strcpyTest() {
     char a[20];
     char *b = "123456";
     cout << "b=" << b << endl;
