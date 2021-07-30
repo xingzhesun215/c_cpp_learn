@@ -30,7 +30,7 @@ public:
  *复制构造方法的学习
  * @return
  */
-int main() {
+int copyClass() {
     Stu *a = new Stu(3);//新建实例指针
     Stu b(4);           //新建实例方法1
     Stu c = {5};          //新建实例方法2
