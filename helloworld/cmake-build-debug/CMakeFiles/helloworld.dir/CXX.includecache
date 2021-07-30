@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/c_test/myUtil.h
+
 /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/main.cpp
 iostream
 -
 set
 -
+c_test/myUtil.h
+/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/helloworld/c_test/myUtil.h
 

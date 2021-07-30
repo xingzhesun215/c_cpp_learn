@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/cmake-build-debug

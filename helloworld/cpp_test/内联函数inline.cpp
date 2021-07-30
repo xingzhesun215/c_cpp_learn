@@ -14,7 +14,7 @@ inline int add(int a, int b) {
  * 内联函数，减少函数调用，内联函数是将方法体插入到调用处，相应的，运行后的程序会变大
  * @return
  */
-int main() {
+int main3() {
     cout << endl << add(1, 2);
     cout << endl << add(2, 2);
     cout << endl << add(3, 2);
