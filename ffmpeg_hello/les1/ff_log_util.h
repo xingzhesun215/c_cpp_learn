@@ -4,8 +4,6 @@
 
 #include <libavutil/log.h>
 
-#ifndef FFMPEG_HELLO_FLOG_H
-#define FFMPEG_HELLO_FLOG_H
 
 //AV_LOG_ERROR
 //AV_LOG_DEBUG
@@ -15,8 +13,8 @@ int logType = AV_LOG_DEBUG;
 
 char *key = "FFmpeg";
 
-void setLogLevel(char *key1, int type) {
-//    key = key1;
+void setLogLevel(char *k, int type) {
+    key = k;
     logType = type;
     av_log_set_level(type);
 }
@@ -29,5 +27,3 @@ void logStr(char *result) {
     av_log(NULL, logType, "%s:%s\n", key, result);
 }
 
-
-#endif //FFMPEG_HELLO_FLOG_H
