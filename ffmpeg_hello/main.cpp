@@ -2,12 +2,11 @@
 
 
 extern "C" {
-#include "les2//ff_file_util.h"
+#include "les3/ff_file_dir.h"
 }
 using namespace std;
 
 int main() {
-    deleteFile("sun.txt1");
-    moveFile("sun.txt1", "hahah.txt");
+    testLS();
     return 0;
 }
