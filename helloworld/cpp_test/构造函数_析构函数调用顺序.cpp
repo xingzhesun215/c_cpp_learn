@@ -23,13 +23,13 @@ public:
  *构造方法/ 析构函数的调用顺序
  * @return
  */
- Demo d1(1);
- void Func(){
-     static Demo d2(2);
-     Demo d3(3);
-     cout<<"Func finished"<<endl;
- }
-int main() {
+Demo d1(1);
+void Func(){
+    static Demo d2(2);
+    Demo d3(3);
+    cout<<"Func finished"<<endl;
+}
+int construct_destruct_test() {
 
     Demo d4(4);
     d4=6;
@@ -40,7 +40,7 @@ int main() {
         Demo d5(5);
     }
     Func();
-     cout<<"main ends"<<endl;
+    cout<<"main ends"<<endl;
 
 
     return 0;
