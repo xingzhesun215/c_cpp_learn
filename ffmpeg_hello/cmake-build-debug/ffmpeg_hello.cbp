@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/les1/fflog.h">
+			<Option target="ffmpeg_hello"/>
+		</Unit>
 		<Unit filename="/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/main.cpp">
 			<Option target="ffmpeg_hello"/>
 		</Unit>

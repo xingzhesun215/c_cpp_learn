@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/main.cpp" "/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/cmake-build-debug/CMakeFiles/ffmpeg_hello.dir/main.cpp.o"
+  "/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_mac_base/main.cpp" "/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_mac_base/cmake-build-debug/CMakeFiles/ffmpeg_hello.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

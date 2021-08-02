@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/les1/fflog.h
+libavutil/log.h
+-
+
 /Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/main.cpp
 iostream
 -
-libavformat/avformat.h
--
 libavcodec/avcodec.h
 -
+les1/fflog.h
+/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/les1/fflog.h
 
 /opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavcodec/avcodec.h
 errno.h
@@ -131,38 +135,6 @@ libavcodec/version.h
 /opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavcodec/version.h
 libavutil/version.h
 /opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavcodec/libavutil/version.h
-
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/avformat.h
-time.h
--
-stdio.h
--
-libavcodec/avcodec.h
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/libavcodec/avcodec.h
-libavutil/dict.h
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/libavutil/dict.h
-libavutil/log.h
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/libavutil/log.h
-avio.h
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/avio.h
-libavformat/version.h
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/libavformat/version.h
-
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/avio.h
-stdint.h
--
-libavutil/common.h
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/libavutil/common.h
-libavutil/dict.h
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/libavutil/dict.h
-libavutil/log.h
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/libavutil/log.h
-libavformat/version.h
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/libavformat/version.h
-
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/version.h
-libavutil/version.h
-/opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavformat/libavutil/version.h
 
 /opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavutil/attributes.h
 

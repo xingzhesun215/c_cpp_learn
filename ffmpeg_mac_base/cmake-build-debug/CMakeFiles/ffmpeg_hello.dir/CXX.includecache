@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/main.cpp
+/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_mac_base/main.cpp
 iostream
 -
 libavformat/avformat.h
