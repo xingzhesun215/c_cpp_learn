@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/ffmpeg_win10_64_base.dir/main.cpp.o  -o ffmpeg_win10_64_base.exe -Wl,--out-implib,libffmpeg_win10_64_base.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -L/cygdrive/f/Sun_Studio/c_cpp_learn/ffmpeg_win10_64_base/librarys -lavfilter -lavformat -lavcodec -lavutil -lswscale -lavdevice 
