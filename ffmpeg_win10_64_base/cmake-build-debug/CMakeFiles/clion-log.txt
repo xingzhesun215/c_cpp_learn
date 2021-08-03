@@ -1,0 +1,4 @@
+C:\Users\Administrator\.CLion2019.3\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/f/Sun_Studio/c_cpp_learn/ffmpeg_win10_64_base
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/f/Sun_Studio/c_cpp_learn/ffmpeg_win10_64_base/cmake-build-debug

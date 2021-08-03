@@ -1,0 +1,3 @@
+/cygdrive/f/Sun_Studio/c_cpp_learn/ffmpeg_win10_64_base/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/f/Sun_Studio/c_cpp_learn/ffmpeg_win10_64_base/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/f/Sun_Studio/c_cpp_learn/ffmpeg_win10_64_base/cmake-build-debug/CMakeFiles/ffmpeg_win10_64_base.dir
