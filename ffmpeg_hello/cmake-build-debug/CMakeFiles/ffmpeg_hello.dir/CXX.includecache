@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/les3/ff_file_dir.h
+/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/main.cpp
+iostream
+-
 libavutil/log.h
 -
 libavformat/avformat.h
 -
-
-/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/main.cpp
-iostream
--
-les3/ff_file_dir.h
-/Users/sun/github_projects/c_cpp_learn/c_cpp_learn/ffmpeg_hello/les3/ff_file_dir.h
 
 /opt/homebrew/Cellar/ffmpeg/HEAD-864d1ef_1/include/libavcodec/avcodec.h
 errno.h

@@ -8,7 +8,7 @@ extern "C" {
 using namespace std;
 
 
-int main(int argc, char* argv[])
+int main2(int argc, char* argv[])
 {
     int ret;
     AVFormatContext *fmt_ctx = NULL; // 定义上下文
