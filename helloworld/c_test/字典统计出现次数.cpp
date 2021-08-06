@@ -31,7 +31,7 @@ struct Rule {
 };
 
 
-int main() {
+int main3333() {
 
     string s;
     set<Word, Rule> st;
