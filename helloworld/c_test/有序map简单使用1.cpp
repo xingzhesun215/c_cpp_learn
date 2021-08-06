@@ -30,7 +30,7 @@ Student students[5] = {{"eee",  5},
 
 typedef map<string, int> MP;
 
-int main() {
+int mainmap() {
     MP mp;
     for (int i = 0; i < 5; i++) {
         mp.insert(make_pair(students[i].name, students[i].score));
