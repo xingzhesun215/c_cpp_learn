@@ -6,7 +6,7 @@ void Hanoi(int, char, char, char);
 
 
 //汉诺塔
-int main() {
+int main333() {
     int n;
     cin >> n;//输入盘子数
 
