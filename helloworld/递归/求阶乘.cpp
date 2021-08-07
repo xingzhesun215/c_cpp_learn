@@ -5,7 +5,7 @@ using namespace std;
 long factorial(int n);
 
 //求阶乘
-int main() {
+int main333() {
     int n;
     while (true) {
         cin >> n;
