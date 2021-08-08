@@ -1,35 +1,45 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
-void Hanoi(int, char, char, char);
+
+int N;
+int queenPos[100];
+
+//用来存放算好的皇后位置，最左上角为（0，0）
+void NQueen(int k);
 
 
-//汉诺塔
+//n皇后问题
 int main() {
-    int n;
-    cin >> n;//输入盘子数
-
-    Hanoi(n, 'A', 'B', 'C');
-
+    cin >> N;//输入皇后数
+    NQueen(0);
     return 0;
 }
 
-/**
- * 将src座上的n个盘子，以mid座为中转，移动到dest座
- * @param n
- * @param src
- * @param mid
- * @param dest
- */
-void Hanoi(int n, char src, char mid, char dest) {
-    if (n == 1) {//只需移动一个盘子
-        cout << src << "->" << dest << endl;//直接将盘子从src移动到dest即可
+void NQueen(int k) {//在0-（k-1）行皇后已经摆好的情况下，摆放在k行及其后的皇后
+    int i;
+    if (k == N) {//N个皇后已经摆好
+        for (i = 0; i < N; ++i) {
+            cout << queenPos[i] + i << " " ;
+        }
+        cout<<endl;
         return;
     }
-    Hanoi(n-1,src,dest,mid);//先将n-1个盘子从src移动到mid
-    cout<<src<<"-->"<<dest<<endl;//再将一个盘子从src移动到dest
-    Hanoi(n-1,mid,src,dest);//最后将n-1个盒子从mid移动到dest1
+    for (int i = 0; i < N; ++i) {//逐渐尝试第K个皇后的问题
+        int j;
+        for (j = 0; j < k; j++) {
+            //和已经摆好的k个皇后比较
+            if (queenPos[j] == i || (abs(queenPos[j] - i)) == abs(k - j)) {
+                break;
+            };
+        }
+        if(j==k){//当前选的位置i不冲突
+            queenPos[k]=i;
+            NQueen(k+1);
+        }
+    }
 }
 
 
