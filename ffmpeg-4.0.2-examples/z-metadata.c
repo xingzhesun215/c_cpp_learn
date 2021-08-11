@@ -23,7 +23,8 @@
 /**
  * @file
  * Shows how the metadata API can be used in application programs.
- * 演示如何使用metadata元数据 api
+ * 演示如何使用metadata元数据 api 
+ * metadata-描述数据的数据
  * @example metadata.c
  */
 
