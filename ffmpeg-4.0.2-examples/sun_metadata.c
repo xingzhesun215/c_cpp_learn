@@ -35,7 +35,7 @@
 int main (int argc, char **argv)
 {
 	/**
-	AVFormatContext结构体内容,包含码流信息的结构体,重要信息如下:
+	AVFormatContext 封装的上下文,包含码流信息的结构体,重要信息如下:
 	
 	AVIOContext *pb：输入数据的缓存
 
