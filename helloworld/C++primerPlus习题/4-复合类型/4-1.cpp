@@ -17,7 +17,7 @@ using namespace std;
  */
 
 
-int main() {
+int main1() {
 
     char first_name[20], last_name[20];
     char grade;
