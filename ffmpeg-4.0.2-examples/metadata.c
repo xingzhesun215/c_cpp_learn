@@ -23,6 +23,7 @@
 /**
  * @file
  * Shows how the metadata API can be used in application programs.
+ * 演示如何使用metadata元数据 api
  * @example metadata.c
  */
 
@@ -33,6 +34,24 @@
 
 int main (int argc, char **argv)
 {
+	/**
+	AVFormatContext结构体内容,包含码流信息的结构体,重要信息如下:
+	
+	AVIOContext *pb：输入数据的缓存
+
+	unsigned int nb_streams：视音频流的个数
+
+	AVStream **streams：视音频流
+
+	char filename[1024]：文件名
+
+	int64_t duration：时长（单位：微秒us，转换为秒需要除以1000000）
+
+	int bit_rate：比特率（单位bps，转换为kbps需要除以1000）
+
+	AVDictionary *metadata：元数据
+
+	*/
     AVFormatContext *fmt_ctx = NULL;
     AVDictionaryEntry *tag = NULL;
     int ret;
@@ -43,13 +62,13 @@ int main (int argc, char **argv)
                "\n", argv[0]);
         return 1;
     }
-
-    if ((ret = avformat_open_input(&fmt_ctx, argv[1], NULL, NULL)))
+			
+    if ((ret = avformat_open_input(&fmt_ctx, argv[1], NULL, NULL)))//打开多媒体数据并且获得一些相关的信息,函数调用成功之后处理过的AVFormatContext结构体
         return ret;
 
-    while ((tag = av_dict_get(fmt_ctx->metadata, "", tag, AV_DICT_IGNORE_SUFFIX)))
+    while ((tag = av_dict_get(fmt_ctx->metadata, "", tag, AV_DICT_IGNORE_SUFFIX)))//字典型获取数据
         printf("%s=%s\n", tag->key, tag->value);
 
-    avformat_close_input(&fmt_ctx);
+    avformat_close_input(&fmt_ctx);//关闭输入
     return 0;
 }
