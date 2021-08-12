@@ -13,7 +13,7 @@ using namespace std;
 
 double tiaohe(int a, int b);
 
-int main() {
+int main1() {
 
     int x;
     int y;
