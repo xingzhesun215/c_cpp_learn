@@ -8,7 +8,7 @@ using namespace std;
  * @return
  */
 
-int main() {
+int main1() {
 
     long long global_amount,china_amount;
     cout<<"enter the world's pupulation:";
