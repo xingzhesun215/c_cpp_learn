@@ -56,19 +56,19 @@ static const char *type_string(int type)
 
 static int list_op(const char *input_dir)
 {
-    AVIODirEntry *entry = NULL;
-    AVIODirContext *ctx = NULL;
+    AVIODirEntry *entry = NULL;//文件体结构
+    AVIODirContext *ctx = NULL;//文件夹上下文
     int cnt, ret;
     char filemode[4], uid_and_gid[20];
 
-    if ((ret = avio_open_dir(&ctx, input_dir, NULL)) < 0) {
+    if ((ret = avio_open_dir(&ctx, input_dir, NULL)) < 0) {//打开文件夹
         av_log(NULL, AV_LOG_ERROR, "Cannot open directory: %s.\n", av_err2str(ret));
         goto fail;
     }
 
     cnt = 0;
-    for (;;) {
-        if ((ret = avio_read_dir(ctx, &entry)) < 0) {
+    for (;;) {//遍历整个文件夹
+        if ((ret = avio_read_dir(ctx, &entry)) < 0) {//读取文件到AVIODirEntry
             av_log(NULL, AV_LOG_ERROR, "Cannot list directory: %s.\n", av_err2str(ret));
             goto fail;
         }
@@ -93,18 +93,18 @@ static int list_op(const char *input_dir)
                entry->modification_timestamp,
                entry->access_timestamp,
                entry->status_change_timestamp);
-        avio_free_directory_entry(&entry);
+        avio_free_directory_entry(&entry);//关闭释放文件实体
         cnt++;
     };
 
   fail:
-    avio_close_dir(&ctx);
+    avio_close_dir(&ctx);//关闭文件夹
     return ret;
 }
 
 static int del_op(const char *url)
 {
-    int ret = avpriv_io_delete(url);
+    int ret = avpriv_io_delete(url);//删除文件
     if (ret < 0)
         av_log(NULL, AV_LOG_ERROR, "Cannot delete '%s': %s.\n", url, av_err2str(ret));
     return ret;
@@ -112,7 +112,7 @@ static int del_op(const char *url)
 
 static int move_op(const char *src, const char *dst)
 {
-    int ret = avpriv_io_move(src, dst);
+    int ret = avpriv_io_move(src, dst);//重命名
     if (ret < 0)
         av_log(NULL, AV_LOG_ERROR, "Cannot move '%s' into '%s': %s.\n", src, dst, av_err2str(ret));
     return ret;
@@ -143,7 +143,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    avformat_network_init();
+    avformat_network_init();//网络组件初始化,此demo没用到
 
     op = argv[1];
     if (strcmp(op, "list") == 0) {
@@ -151,28 +151,28 @@ int main(int argc, char *argv[])
             av_log(NULL, AV_LOG_INFO, "Missing argument for list operation.\n");
             ret = AVERROR(EINVAL);
         } else {
-            ret = list_op(argv[2]);
+            ret = list_op(argv[2]);//遍历文件夹的方法
         }
     } else if (strcmp(op, "del") == 0) {
         if (argc < 3) {
             av_log(NULL, AV_LOG_INFO, "Missing argument for del operation.\n");
             ret = AVERROR(EINVAL);
         } else {
-            ret = del_op(argv[2]);
+            ret = del_op(argv[2]);//删除操作
         }
     } else if (strcmp(op, "move") == 0) {
         if (argc < 4) {
             av_log(NULL, AV_LOG_INFO, "Missing argument for move operation.\n");
             ret = AVERROR(EINVAL);
         } else {
-            ret = move_op(argv[2], argv[3]);
+            ret = move_op(argv[2], argv[3]);//移动操作
         }
     } else {
         av_log(NULL, AV_LOG_INFO, "Invalid operation %s\n", op);
         ret = AVERROR(EINVAL);
     }
 
-    avformat_network_deinit();
+    avformat_network_deinit();//网络组件反初始化
 
     return ret < 0 ? 1 : 0;
 }
