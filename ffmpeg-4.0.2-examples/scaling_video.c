@@ -48,7 +48,7 @@ static void fill_yuv_image(uint8_t *data[4], int linesize[4],
         }
     }
 }
-
+//缩放视频,产生400帧未压缩数据.送入转换器转换.然后输出. 这里涉及了切片
 int main(int argc, char **argv)
 {
     uint8_t *src_data[4], *dst_data[4];
@@ -72,21 +72,23 @@ int main(int argc, char **argv)
     }
     dst_filename = argv[1];
     dst_size     = argv[2];
-
+	
+	//从传进来的 WxH 中解析出宽高数据
     if (av_parse_video_size(&dst_w, &dst_h, dst_size) < 0) {
         fprintf(stderr,
                 "Invalid size '%s', must be in the form WxH or a valid size abbreviation\n",
                 dst_size);
         exit(1);
     }
-
+	
+	//打开视频文件
     dst_file = fopen(dst_filename, "wb");
     if (!dst_file) {
         fprintf(stderr, "Could not open destination file %s\n", dst_filename);
         exit(1);
     }
 
-    /* create scaling context */
+    /* create scaling context 创建缩放上下文,这个上下文竟然是返回回来的*/
     sws_ctx = sws_getContext(src_w, src_h, src_pix_fmt,
                              dst_w, dst_h, dst_pix_fmt,
                              SWS_BILINEAR, NULL, NULL, NULL);
@@ -99,14 +101,14 @@ int main(int argc, char **argv)
         ret = AVERROR(EINVAL);
         goto end;
     }
-
+	//根据宽高和像素格式来初始化图像缓冲,填给指定的数据指针和大小指针
     /* allocate source and destination image buffers */
     if ((ret = av_image_alloc(src_data, src_linesize,
                               src_w, src_h, src_pix_fmt, 16)) < 0) {
         fprintf(stderr, "Could not allocate source image\n");
         goto end;
     }
-
+	//同上,作为输出用的图片缓冲
     /* buffer is going to be written to rawvideo file, no alignment */
     if ((ret = av_image_alloc(dst_data, dst_linesize,
                               dst_w, dst_h, dst_pix_fmt, 1)) < 0) {
@@ -116,13 +118,16 @@ int main(int argc, char **argv)
     dst_bufsize = ret;
 
     for (i = 0; i < 100; i++) {
+		//根据宽高,主动生成图片数据
         /* generate synthetic video */
         fill_yuv_image(src_data, src_linesize, src_w, src_h, i);
 
+		//生成的图片数据,送入转化器上下文,进行转换
         /* convert to destination format */
         sws_scale(sws_ctx, (const uint8_t * const*)src_data,
                   src_linesize, 0, src_h, dst_data, dst_linesize);
 
+		//把输出数据写到文件中,
         /* write scaled image to file */
         fwrite(dst_data[0], 1, dst_bufsize, dst_file);
     }
@@ -132,9 +137,13 @@ int main(int argc, char **argv)
            av_get_pix_fmt_name(dst_pix_fmt), dst_w, dst_h, dst_filename);
 
 end:
+	//关闭文件
     fclose(dst_file);
+	//释放缓存
     av_freep(&src_data[0]);
+	//释放缓存
     av_freep(&dst_data[0]);
-    sws_freeContext(sws_ctx);
+    //释放缩放上下文
+	sws_freeContext(sws_ctx);
     return ret < 0;
 }
