@@ -12,9 +12,9 @@ using namespace std;
 
 const int SIZE = 20;
 
-int main() {
-   // char first_name[SIZE], last_name[SIZE];
-  //  char full_name[2 * SIZE];
+int main1() {
+    // char first_name[SIZE], last_name[SIZE];
+    //  char full_name[2 * SIZE];
 
     string first_name,last_name,full_name;
     cout << "enter your first name :";
