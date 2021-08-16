@@ -12,7 +12,7 @@ using namespace std;
 void loop_print(const char *str, int n = 0);
 
 
-int main() {
+int main1() {
     loop_print("hello cpp");
     loop_print("hello cpp");
     loop_print("hello c++",5);
