@@ -19,7 +19,7 @@ template<>
 char* maxn<char*>(char*[],int);
 
 
-int main() {
+int main1() {
 
     int arr[5]={1,2,4,6,3};
     double dob[]={1.43,10.59,2.33,5,12.99};
