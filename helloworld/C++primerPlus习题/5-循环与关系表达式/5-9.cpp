@@ -15,7 +15,7 @@ using namespace std;
 const int SIZE = 20;
 const char FINISHED[] = "done";
 
-int main() {
+int main1() {
     int counter=0;
     string words;
     cout<<"Enter the word(to stop,type the word done"<<endl;

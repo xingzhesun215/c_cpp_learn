@@ -15,18 +15,18 @@ using namespace std;
 const int SIZE = 20;
 const char FINISHED[] = "done";
 
-int main() {
-    int counter=0;
-    string words;
-    cout<<"Enter the word(to stop,type the word done"<<endl;
+int main1() {
+    int counter = 0;
+    char words[SIZE];
+    cout << "Enter the word(to stop,type the word done" << endl;
 
-    while (words!=FINISHED) {
+    while (strcmp(FINISHED, words) != 0) {
         counter++;
         cin >> words;
         cin.get();
 
     }
-    cout<<" you  enter a total total ="<<counter-1<<endl;
+    cout << " you  enter a total total =" << counter - 1 << endl;
     return 0;
 }
 
