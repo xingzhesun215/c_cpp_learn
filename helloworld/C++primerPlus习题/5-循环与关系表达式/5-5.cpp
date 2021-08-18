@@ -12,7 +12,7 @@ using namespace std;
 
 
 
-int main() {
+int main1() {
 
     const string Month[] = {"JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"};
     int sale_amount[12]={};
