@@ -12,7 +12,7 @@ using namespace std;
 
 void showmenu();
 
-int main() {
+int main1() {
     char choice;
     showmenu();
     cin.get(choice);
