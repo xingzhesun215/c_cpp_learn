@@ -27,6 +27,8 @@
  * @example http_multiclient.c
  * This example will serve a file without decoding or demuxing it over http.
  * Multiple clients can connect and will receive the same file.
+ *此示例将服务于文件而不通过HTTP解码或解散。
+ *多个客户端可以连接并将接收相同的文件。
  */
 
 #include <libavformat/avformat.h>
@@ -39,6 +41,7 @@ static void process_client(AVIOContext *client, const char *in_uri)
     uint8_t buf[1024];
     int ret, n, reply_code;
     uint8_t *resource = NULL;
+	//握手
     while ((ret = avio_handshake(client)) > 0) {
         av_opt_get(client, "resource", AV_OPT_SEARCH_CHILDREN, &resource);
         // check for strlen(resource) is necessary, because av_opt_get()
@@ -114,12 +117,14 @@ int main(int argc, char **argv)
     in_uri = argv[1];
     out_uri = argv[2];
 
-    avformat_network_init();
-
+    avformat_network_init();//初始化网络组件
+	
+	//给文件夹上下文设置监听模式 2
     if ((ret = av_dict_set(&options, "listen", "2", 0)) < 0) {
         fprintf(stderr, "Failed to set listen mode for server: %s\n", av_err2str(ret));
         return ret;
     }
+	//打开文件
     if ((ret = avio_open2(&server, out_uri, AVIO_FLAG_WRITE, NULL, &options)) < 0) {
         fprintf(stderr, "Failed to open server: %s\n", av_err2str(ret));
         return ret;
