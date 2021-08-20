@@ -33,7 +33,7 @@ public:
 };
 
 
-int main() {
+int main1() {
 
     Person one;
     Person two("Smythecraft");
