@@ -1,72 +1,67 @@
-#include <iostream>
 
 
 using namespace std;
 
 
 /**
- * 10-2
+ * 6-6
  *
  * @return
  */
 
-#include <cstring>
+#include <string>
+#include <iostream>
 
-class Person {
-private:
-    static const int LIMIT = 25;
-    string lname;
-    char fname[LIMIT];
-
-public:
-    Person() {
-        lname = "";
-        fname[0] = '\n';
-    }
-
-    Person(const string &ln, const char *fn = "Heyyou");
-
-    void show() const;
-
-    void FormalShow() const;
-
+struct patrons {
+    string full_name;
+    double fund;
 };
 
 
 int main() {
 
-    Person one;
-    Person two("Smythecraft");
-    Person three("Dimwidd", "Sam");
+    int patrons_number;
+    patrons *ppatrons;
+    cout << "How many patrons" << endl;
+    cin >> patrons_number;
+    cin.get();
+    ppatrons = new patrons[patrons_number];
+    int id;
+    bool empty = true;
+    cout << "Staring to input patrons's info:" << endl;
+    while (id < patrons_number) {
+        cout << "enter the full name of patrons: ";
+        getline(cin, ppatrons[id].full_name);
+        cout << "Enter the fund of " << ppatrons[id].full_name << endl;
+        cin >> ppatrons[id].fund;
+        cin.get();
+        id++;
+        cout << "Continue to input ,or press (f) to finished ";
+        if (cin.get() == 'f') {
+            break;
+        }
+    }
+    cout << "Grand Patrons" << endl;
+    for (int i = 0; i < patrons_number; ++i) {
+        if (ppatrons[i].fund >= 1000) {
+            cout << ppatrons[i].full_name << " : " << ppatrons[i].fund << endl;
+            empty = false;
+        }
+    }
 
-    cout << endl;
-    one.FormalShow();
-    two.FormalShow();
-    three.FormalShow();
-
-
+    if (empty) {
+        cout << "NONE" << endl;
+    }
+    empty = false;
+    cout << "Patrons" << endl;
+    for (int i = 0; i < patrons_number; ++i) {
+        if (ppatrons[i].fund < 1000) {
+            cout << ppatrons[i].full_name << " : " << ppatrons[i].fund << endl;
+        }
+    }
+    if (empty) {
+        cout << "NONE" << endl;
+    }
     return 0;
 }
-
-Person::Person(const string &ln, const char *fn) {
-    lname = ln;
-    strcpy(fname, fn);
-}
-
-void Person::show() const {
-    if (lname == "" && fname[0] == '\0') {
-        cout << " No Name " << endl;
-    } else {
-        cout << "Person Name: " << fname << "." << lname << endl;
-    }
-}
-
-void Person::FormalShow() const {
-    if (lname == "" && fname[0] == '\0') {
-        cout << " No Name " << endl;
-    } else {
-        cout << "Person Name: " << lname << "." << fname << endl;
-    }
-}
-
 
