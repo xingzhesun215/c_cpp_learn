@@ -13,7 +13,7 @@ using namespace std;
 #include <cctype>
 
 
-int main() {
+int main1() {
     char word[40];
     int vowel, consonant, others;
     vowel = consonant = others = 0;
