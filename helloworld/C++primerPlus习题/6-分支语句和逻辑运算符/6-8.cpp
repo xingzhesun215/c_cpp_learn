@@ -12,7 +12,7 @@ using namespace std;
  */
 
 #include <fstream>
-int main() {
+int main1() {
 
     ifstream fin;
     string file_name;
