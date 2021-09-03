@@ -19,7 +19,7 @@ struct patrons {
     double fund;
 };
 
-int main() {
+int main1() {
     int patrons_numbers;
     patrons *ppatrons;
 
