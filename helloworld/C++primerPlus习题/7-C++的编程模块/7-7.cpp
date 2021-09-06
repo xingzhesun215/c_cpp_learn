@@ -16,7 +16,7 @@ double* fill_array(double* begin,double *end);
 void show_array(double * begin,double *endl);
 void revalue(double r,double * begin,double *endl);
 
-int main() {
+int main1() {
     double properties[Max];
     double *pend= fill_array(properties,properties+Max);
     show_array(properties,pend);
