@@ -19,7 +19,7 @@ struct Spend{
 void fill(double arr[],int size);
 void show(const double arr[],int size);
 
-int main() {
+int main1() {
     Spend expenses;
 
     fill(expenses.money,Season);
