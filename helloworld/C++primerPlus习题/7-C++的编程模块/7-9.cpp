@@ -26,7 +26,7 @@ void display2(const student *ps);
 
 void display3(const student pa[], int n);
 
-int main() {
+int main1() {
 
     cout << "Enter the class size:";
     int class_size;
