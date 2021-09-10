@@ -19,7 +19,7 @@ double subtract(double, double);
 double calculate(double, double, double (*)(double, double));
 
 
-int main() {
+int main1() {
 
     double q = calculate(2.5, 10.4, add);
 
