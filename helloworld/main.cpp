@@ -1,131 +1,68 @@
-
+#define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
-#include <vector>
-#include <algorithm>
+#include <string>
+
 
 using namespace std;
 
 /**
- * STL中的容器/算法/迭代器
+ * string简介
+ * 1，char*是个指针，String是个类，string封装了char*,是char*的容器类
+ * 2，string封装了很多使用的成员方法，查找find,拷贝copy,删除delete 替换replace 插入insert
+ * 3，string管理char*所分配的内存，每一次string的复制/取值都由string类来维护，不用担心越界
+ * 4，string和char*可以转换string->char*通过string提供的c_str()方法
  */
-void test01() {
-    vector<int> v;//STL中的标准容器之一：动态数组
-    v.push_back(1);
-    v.push_back(5);
-    v.push_back(3);
-    v.push_back(7);
-    v.push_back(5);
-    //迭代器
-    vector<int>::iterator pStart = v.begin();//vector容器提供begin()，返回指向第一个元素的迭代器
-    vector<int>::iterator pEnd = v.end();//vector提供end(),返回指向最后一个元素的迭代器
 
-    //*通过迭代器遍历
-    while (pStart != pEnd) {
-        cout << *pStart << " ";
-        pStart++;
-    }
+void exchange(){
+    //string转char*
+    string str="itcast";
+    const char* cstr=str.c_str();
 
-    cout << endl;
-    //算法count统计元素的个数
-    int n = count(pStart, pEnd, 5);
-    cout << "n:" << n << endl;
+    //char*转string
+    char* s="itcase";
+    string sstr(s);
+
 }
 
-class Teacher {
-public:
-    int age;
+//string 构造方法
 
-    Teacher(int age) : age(age) {
+void test01(){
+  //string str=  string();//创建一个空的字符串
+  //string (const string& str);//使用一个string对象初始化另一个string对象
+  //string(const char* s);//使用字符串s初始化
+  //string(int n,char c);//使用n个c初始化
 
-    };
+  //例子
+  //默认构造函数
+  string s1;
 
-    ~Teacher() {
+  //拷贝构造函数
+  string s2(s1);
+  string s3 =s1;
 
-    }
-};
+  //带参数的构造函数
+  char* str="itcast";
+  string s4(str);
+  string s5(5,'a');
 
-void test02() {
-    vector<Teacher> v;
-    Teacher t1(10), t2(20), t3(30);
-    v.push_back(t1);
-    v.push_back(t1);
-    v.push_back(t2);
-    v.push_back(t3);
-    vector<Teacher>::iterator tStart = v.begin();
-    vector<Teacher>::iterator tEnd = v.end();
-    while (tStart != tEnd) {
-        cout << tStart->age << " ";
-        tStart++;
-    }
-    cout << endl;
 }
 
-void test03() {
-    vector<Teacher *> v;
+//基本复制操作
+void test02(){
+    //string& operator=(const char*s);//char*类型字符串赋值给当前字符串
+    //string& operator=(const string&s1);//把字符串s赋值给当前字符串
+    //string& operator=(char c);//字符赋值给当前字符串
+    //string& assign(const char* s);//把字符串s赋值给当前的字符串
+    //string& assign(const char* s,int n);//把字符串s的前n个字符赋值给字符串
+    //string& assign(const string& s);//把字符串s赋值当前字符串
+    //string& assign(int n,char c);// 把n个字符赋值给当前字符串
+    //string& assign（const string&s，int start，int n);//将s从start位置开始n个字符赋值给字符串
 
-    Teacher *t1 = new Teacher(10);
-    Teacher *t2 = new Teacher(20);
-    Teacher *t3 = new Teacher(30);
-    Teacher *t4 = new Teacher(40);
-
-    v.push_back(t1);
-    v.push_back(t2);
-    v.push_back(t3);
-    v.push_back(t4);
-
-    vector<Teacher *>::iterator pStart = v.begin();
-    vector<Teacher *>::iterator pEnd = v.end();
-    while (pStart != pEnd) {
-        cout << (*pStart)->age << " ";
-        pStart++;
-    }
-    cout << endl;
 }
-
-//容器嵌套容器
-void test04() {
-    vector<vector<int>> v;
-
-    vector<int> v1;
-    v1.push_back(1);
-    v1.push_back(2);
-    v1.push_back(3);
-    v1.push_back(4);
-    v1.push_back(5);
-
-    vector<int> v2;
-    v2.push_back(11);
-    v2.push_back(12);
-
-    vector<int> v3;
-    v3.push_back(101);
-    v3.push_back(102);
-
-    v.push_back(v1);
-    v.push_back(v2);
-    v.push_back(v3);
-
-   vector<vector<int>>::iterator  ps=v.begin();
-   vector<vector<int>>::iterator  pe=v.end();
-    while (ps!=pe){
-        vector<int> vtemp=*ps;
-       vector<int>::iterator vts= vtemp.begin();
-       vector<int>::iterator vte= vtemp.end();
-        while (vts!=vte){
-            cout<<*vts<<" ";
-            vts++;
-        }
-        cout<<endl;
-        ps++;
-    }
-}
-
 int main() {
-    //test01();
-    //test02();
-    //test03();
-    test04();
+
+
     return 0;
 }
 
