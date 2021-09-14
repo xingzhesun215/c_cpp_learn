@@ -74,7 +74,7 @@ void test(){
     cout<<"邮箱正确"<<endl;
 }
 
-int main() {
+int main1() {
     test();
     return 0;
 }
