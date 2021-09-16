@@ -42,7 +42,7 @@ void test03(){
     qu.size();//个数
 }
 
-int main() {
+int main1() {
     return 0;
 }
 
