@@ -105,7 +105,7 @@ void test05() {
 }
 
 
-int main() {
+int main1() {
     test05();
     return 0;
 }
