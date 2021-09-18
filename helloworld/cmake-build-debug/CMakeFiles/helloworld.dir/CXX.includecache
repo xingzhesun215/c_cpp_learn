@@ -11,6 +11,8 @@ iostream
 -
 map
 -
-set
+string
+-
+vector
 -
 
