@@ -12,7 +12,7 @@ using namespace std;
 
 
 
-int main() {
+int main1() {
     golf ann;
     setgolf(ann,"AnnBirdfreee",24);
     golf andy;
