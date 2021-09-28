@@ -22,7 +22,7 @@ int set_chaff(chaff &, char *, int);
 
 void show_chaff(const chaff &);
 
-int main() {
+int main1() {
     char buffer[1024];
     char st[20];
     int slag, n = 0;

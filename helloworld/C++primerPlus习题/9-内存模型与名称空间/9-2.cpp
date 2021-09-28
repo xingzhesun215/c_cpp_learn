@@ -14,7 +14,7 @@ const int ArSize = 10;
 void strcount(const char *str);
 
 
-int main() {
+int main1() {
     char input[ArSize];
     char next;
     cout << "Enter a line:\n";
