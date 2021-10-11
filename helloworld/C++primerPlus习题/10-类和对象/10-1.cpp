@@ -1,27 +1,21 @@
 #include <iostream>
 
-
 using namespace std;
 
+// 10-1
 
-/**
- * 10-1
- *
- * @return
- */
-
-class BankAcount {
+class BankAccount {
 private:
     string fullname;
     string account;
     double deposit;
 
 public:
-    BankAcount();
+    BankAccount();
 
-    BankAcount(const string, const string, double);
+    BankAccount(const string, const string, const float);
 
-    ~BankAcount();
+    ~BankAccount();
 
     void init_account(const string, const string, float);
 
@@ -33,30 +27,33 @@ public:
 
 };
 
-
 int main1() {
-
-    BankAcount ba("Nik", "0001", 1200);
+    BankAccount ba("Nik", "0001", 1200);
     ba.print_info();
     ba.init_account("Nik Swit", "", 1500);
     ba.print_info();
-    ba.save(224.5);
+    ba.save(233.5);
     ba.print_info();
     return 0;
 }
 
-BankAcount::BankAcount(const string name, const string id, double f) {
-    this->fullname = name;
-    this->account = id;
-    this->deposit = f;
+BankAccount::BankAccount() {
+    deposit = 0;
 }
 
-BankAcount::~BankAcount() {
-    cout << "ALl Done" << endl;
+BankAccount::BankAccount(const string name, const string id, const float f) {
+    fullname = name;
+    account = id;
+    deposit = f;
 }
 
-void BankAcount::init_account(string name, string id, float f) {
-    cout << "Initaializing Account infomation " << endl;
+BankAccount::~BankAccount() {
+    cout << "All Done !" << endl;
+}
+
+void BankAccount::init_account(const string name, const string id, float f) {
+    cout << "Initializing Account infomation...." << endl;
+
     if (name != "") {
         fullname = name;
     }
@@ -66,18 +63,17 @@ void BankAcount::init_account(string name, string id, float f) {
     deposit = f;
 }
 
-void BankAcount::print_info() const {
-    cout << "The account info :" << endl;
-    cout << "Full name :" << fullname << endl;
-    cout << "Account id :" << account << endl;
-    cout << "Desposit :" << deposit;
+void BankAccount::print_info() const {
+    cout << "The Account info :" << endl;
+    cout << "Full Name :" << fullname << endl;
+    cout << "Account Id: " << account << endl;
+    cout << "Deposit : " << deposit << endl;
 }
 
-void BankAcount::save(float f) {
-    deposit = f;
+void BankAccount::save(float f) {
+    deposit += f;
 }
 
-void BankAcount::withdraw(float f) {
-    deposit -=f;
+void BankAccount::withdraw(float f) {
+    deposit -= f;
 }
-
