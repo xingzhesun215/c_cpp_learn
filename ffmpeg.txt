@@ -1,0 +1,152 @@
+ffprobe相关必备命令
+
+ffprobe xxx.mp3
+显示音频文件时长/开始播放时间/比特率/编码格式/采样率/声道数/采样位数
+
+
+ffprobe xxx.mp4
+显示视频Metadata信息/编码格式/封装格式/每一帧的格式/分辨率/比特率,同时也可能有音频相关的信息
+
+
+ffprobe show_format xxx.mp4
+输出格式信息format_name/时间长度duration/文件大小size/比特率bit_rate/流的数目nb_streams
+
+ffprobe -print_format json -show_streams xxx.mp4
+以json格式输出具体的每一个流最详细的信息
+
+ffprobe -show_frames xxx.mp4
+显示帧信息
+
+ffprobe -show_packets xxx.mp4
+显示包信息
+
+
+
+
+ffplay相关命令
+
+ffplay xxx.mp3
+播放音频文件,同时显示语谱图
+
+ffplay xxx.mp4
+播放视频文件
+
+ffplay xxx.mp4 -loop 10
+连播10遍
+
+
+ffplay xxx.mp4 -ast 1
+播放视频,且是音频的第一路流
+
+ffplay xxx.mp4 -vst 1
+播放视频,且是视频的第一路流
+
+
+ffplay xxx.pcm -f s16le -channels 2 -ar 44100
+以16位 双声道 采样率为44100的方式播放pcm数据
+
+ffplay -f rawvideo -pixel_format yuv420p -s 480*480 xxx.yuv
+以原始格式 yuv420p帧格式 一定宽高的信息播放pcm
+
+
+
+ffplay -f rawvideo -pixel_format rgb24 -s 480*480 xxx.rgb
+播放rgb格式的原始文件
+
+
+ffplay xxx.mp4 -sync audio
+ffplay xxx.mp4 -sync video
+ffplay xxx.mp4 -sync ext
+分别以音频/视频/外部时间轴为音画播放同步对齐策率
+
+
+ffmpeg相关命令
+
+ffmpeg -formats
+列出所支持的全部格式
+
+
+ffmpeg -i xxx.mp4 -ss 00:00:50.0 -codec copy -t 20 output.mp4
+从第50秒开始剪切20秒的视频
+
+ffmpeg -i xxx.mp4 -t 00:00:50 -c copy small-1.mp4 -ss 00:00:50 -codec copy small-2.mp4
+视频切割为2个子视频文件
+
+
+ffmpeg -i xxx.mp4 -vn -acodec copy out.m4a
+提取一个视频中的音频文件
+
+ffmpeg -i xxx.mp4 -an -vcodec copy out.mp4
+提取单视频文件(没有音频流)
+
+
+ffmpeg -i xxx.mp4 -an -vcodec copy -bsf:v h264_mp4toannexb out.h264
+提取视频流导出为裸H264数据
+
+
+ffmpeg -i test.aac -i test.h24 -acodec copy -bsf:a aac_adtstasc -vcodec copy -f mp4 out.mp4
+
+
+使用aac音频+H264视频生成mp4文件
+
+
+ffmpeg -i input.wav -acodec libfdk_aac out.aac
+对音频文件进行编码格式转换
+
+
+ffmpeg -i input.wav -acodec pcm_s16le -f s16le out.pcm
+从wav文件中导出pcm裸数据
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
