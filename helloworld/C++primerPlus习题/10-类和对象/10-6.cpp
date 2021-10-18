@@ -18,7 +18,7 @@ public:
     void reset(double a = 0, double b = 0);
 };
 
-int main() {
+int main1() {
     Move a, b(12.5, 19);
 
     double x, y;
