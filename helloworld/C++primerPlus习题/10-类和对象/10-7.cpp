@@ -19,7 +19,7 @@ public:
 };
 
 
-int main() {
+int main1() {
     plory pl;
     pl.print_info();
     pl.reset_ci(98);
