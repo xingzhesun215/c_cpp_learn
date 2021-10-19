@@ -2,63 +2,34 @@
 
 using namespace std;
 
-// 10-6
+// 10-7
+const int SIZE = 7;
 
-class Move {
+class plory {
 private:
-    double x;
-    double y;
+    char name[SIZE];
+    int CI;
+
 public:
-    Move(double a = 0, double b = 0);
+    plory(const char sr[] = {"Plorga"}, int ci = 50);
 
-    void showmove() const;
+    void reset_ci(int n);
 
-    Move add(const Move &m);
-
-    void reset(double a = 0, double b = 0);
+    void print_info() const;
 };
 
+
 int main() {
-    Move a, b(12.5, 19);
-
-    double x, y;
-
-    a.showmove();
-    b.showmove();
-
-    cout << "Enter x and y" << endl;
-
-    cin >> x >> y;
-
-    a.reset(x, y);
-    a.showmove();
-    b.showmove();
-
-    cout << "Object A add B:" << endl;
-    a.add(b);
-    a.showmove();
-
-    b.showmove();
+    plory pl;
+    pl.print_info();
+    pl.reset_ci(98);
+    pl.print_info();
+    plory pm("Stenom", 87);
+    pm.print_info();
     return 0;
 }
 
-Move::Move(double a, double b) {
-    x = a;
-    y = b;
-}
 
-void Move::showmove() const {
-    cout << "current x=" << x << " y=" << y << endl;
-}
-
-Move Move::add(const Move &m) {
-    Move temp;
-    temp = x = x + m.x;
-    temp = y + m.y;
-    return temp;
-}
-
-void Move::reset(double a, double b) {
-    x=a;
-    y=b;
+void plory::print_info() const {
+    cout << "Plory name:" << name << " ,CI=" << CI << endl;
 }
